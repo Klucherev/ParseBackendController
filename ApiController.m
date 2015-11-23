@@ -1,3 +1,5 @@
+// Parse backend API controller with ReactiveCocoa
+
 - (RACSignal*)getObjectsForClassName:(NSString*)className withPredicate:(NSPredicate*)predicate includeKeys:(NSArray *)keys {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
